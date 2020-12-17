@@ -1,0 +1,10 @@
+extends layout
+block content
+  h1 #{title}
+  br
+  b This is a simple NodeJS CRUD project written in Express 4.
+  br
+  hr
+  p Its views are built in PUG(Jade) and it uses PassportJS for User Authentication. It validates inputs using Express-Validator. It does display error/success alert messages using Express-Messages and Connect-flash. It uses MongoDB for storage and bcryptJS for user password encryption.
+  p Click <b>Home</b> to view a list of articles, <b>Register</b> to add a new user and <b>Login</b> to authenticate.
+  p You can <b>Create, Read, Update and Delete Articles and Users</b>. Only users that have <b>Admin role</b> can <b>manage users data</b>. One can register and edit one's own data.

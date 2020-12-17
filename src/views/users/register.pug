@@ -1,0 +1,30 @@
+extends ../layout
+block content
+  h1 #{title}
+  form(action="/users/", method="POST")
+    #form-group
+      label Name:
+      input.form-control(name='name', type='text', value=newUser ? newUser.name : '')
+    #form-group
+      label E-mail:
+      input.form-control(name='email', type='text', value=newUser ? newUser.email : '')
+    #form-group
+      label Username:
+      input.form-control(name='username', type='text', value=newUser ? newUser.username : '')
+    #form-group
+      label Password:
+      input.form-control(name='password', type='password', value=newUser ? newUser.password : '')
+    #form-group
+      label Confirm Password:
+      input.form-control(name='passwordConfirmation', type='password', value=newUser ? newUser.passwordConfirmation : '')
+    #form-group
+      label Roles
+      .form-check.form-check-inline.ml-4
+        input#role-admin.form-check-input(type='checkbox' value='admin' name="roles")
+        label.form-check-label(for='role-admin')
+          | Administrator
+      .form-check.form-check-inline
+        input#role-user.form-check-input(type='checkbox' value='user' checked name="roles")
+        label.form-check-label(for='role-user')
+          | User
+    input.btn.btn-primary.mt-4(type="submit", value="Submit")

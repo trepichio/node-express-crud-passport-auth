@@ -1,0 +1,24 @@
+{
+  "ids": {
+    "github": "trepichio/node-express-crud-passport-auth"
+  },
+  "badges": [
+    {
+      "alt": "GitHub Repo Views",
+      "url": "https://visitor-badge.glitch.me/badge?page_id=node-express-crud.visitor-badge",
+      "img": "https://visitor-badge.glitch.me/badge?page_id=node-express-crud.visitor-badge"
+    },
+    {
+      "alt": "GitHub Repo stars",
+      "url": "https://badgen.net/github/stars/trepichio/node-express-crud",
+      "img": "https://badgen.net/github/stars/trepichio/node-express-crud"
+    },
+    {
+      "alt": "GitHub top language",
+      "url": "https://img.shields.io/github/languages/top/trepichio/node-express-crud?style=falt",
+      "img": "https://img.shields.io/github/languages/top/trepichio/node-express-crud?style=falt"
+    }
+  ],
+  "text": "Its views are built in PUG(Jade) and it uses PassportJS for User Authentication. It validates inputs using Express-Validator. It does display error/success alert messages using Express-Messages and Connect-flash. It uses MongoDB for storage and bcryptJS for user password encryption. You can Create, Read, Update and Delete Articles and Users. Only users that have Admin role can manage users data. One can register and edit one's own data.",
+  "line": "solar"
+}

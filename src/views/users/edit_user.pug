@@ -1,0 +1,32 @@
+extends ../layout
+block content
+  h1 #{title}
+  form(action="/users/"+userDb._id, method="POST" name="formEditUser")
+    #form-group
+      label Name:
+      input.form-control(name='name', type='text', value=userDb.name)
+    #form-group
+      label E-mail:
+      input.form-control(name='email', type='text', value=userDb.email)
+    #form-group
+      label Username:
+      input.form-control(name='username', type='text', value=userDb.username)
+    #form-group
+      label Password:
+      input.form-control(name='password', type='password', value='' placeholder="leave it blank if you don't want to change")
+    #form-group
+      label Confirm Password:
+      input.form-control(name='passwordConfirmation', type='password', value='')
+    if user.roles.includes('admin')
+      #form-group
+        input(type="checkbox", name="roles" value='' checked style="display: none")
+        label Roles
+        .form-check.form-check-inline.ml-4
+          input#role-admin.form-check-input(type='checkbox' value='admin' name="roles" checked=(!!userDb.roles && userDb.roles.includes('admin')))
+          label.form-check-label(for='role-admin')
+            | Administrator
+        .form-check.form-check-inline
+          input#role-user.form-check-input(type='checkbox' value='user' name="roles" checked=(!!userDb.roles && userDb.roles.includes('user')))
+          label.form-check-label(for='role-user')
+            | User
+    input.btn.btn-primary.mt-4(type="submit", value="Submit")

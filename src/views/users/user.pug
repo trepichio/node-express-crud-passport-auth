@@ -1,0 +1,10 @@
+extends ../layout
+block content
+  h1= userDb.name
+  h5 e-mail: #{userDb.email}
+  .container
+    p username: #{userDb.username}
+    hr
+    if user && (user.roles.includes('admin') || user.id == userDb.id)
+      a.btn.btn-outline-primary(href="/users/edit/"+ userDb.id) Edit
+      a.btn.btn-danger.delete-user.ml-2(href="", data-id=userDb._id) Delete

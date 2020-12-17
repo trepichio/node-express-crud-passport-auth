@@ -1,0 +1,38 @@
+{
+  "name": "node-express-crud-passport-auth",
+  "version": "1.0.0",
+  "description": "This is a simple NodeJS CRUD project written in Express 4.",
+  "title": "CRUD with error validations and authentication in Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "João Trepichio",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.7.0",
+    "mongoose": "^5.11.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.0"
+  },
+  "contributors": [
+    {
+      "name": "João Trepichio",
+      "email": "trepichio@gmail.com",
+      "url": "http://trepichio.github.io",
+      "info": [
+        "🔥"
+      ],
+      "img": "https://avatars2.githubusercontent.com/u/11396817?s=460&u=085712d4f1296e6ad0a220ae7c0ea5278a9c40ed&v=4"
+    }
+  ]
+}

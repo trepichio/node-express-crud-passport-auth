@@ -1,0 +1,11 @@
+extends ../layout
+block content
+  h1 #{title}
+  form(action="/articles", method="post")
+    #form-group
+      label Title:
+      input.form-control(name='title', type='text' value=article ? article.title : '')
+    #form-group
+      label Body:
+      textarea.form-control(name='body') #{value=article ? article.body : ''}
+    input.btn.btn-primary.mt-4(type="submit", value="Submit")

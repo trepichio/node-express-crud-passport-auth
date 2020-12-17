@@ -1,0 +1,10 @@
+extends ../layout
+block content
+  h1= article.title
+  h5 written by #{author}
+  .container
+    p= article.body
+    hr
+    if user && user.id === article.author
+      a.btn.btn-outline-primary(href="/articles/edit/"+ article.id) Edit
+      a.btn.btn-danger.delete-article.ml-2(href="", data-id=article._id) Delete
