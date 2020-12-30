@@ -1,3 +1,9 @@
+@import "../bower_components/Font-Awesome/css/fontawesome.css";
+@import "../bower_components/Font-Awesome/css/brands.css";
+@import "../bower_components/Font-Awesome/css/regular.css";
+@import "../bower_components/Font-Awesome/css/solid.css";
+
+
 .alert-error {
   color: #a94442;
   background-color: #f2dede;
